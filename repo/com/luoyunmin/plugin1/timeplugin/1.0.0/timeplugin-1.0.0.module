@@ -1,0 +1,82 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.luoyunmin.plugin1",
+    "module": "timeplugin",
+    "version": "1.0.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.0.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 7,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.7.20"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "timeplugin-1.0.0.jar",
+          "url": "timeplugin-1.0.0.jar",
+          "size": 2326,
+          "sha512": "c9242784266e4bffbc0fb37afb6324c44679a70448e88fcc74e119c44ea094050970c75f64272f530197c5137dac06dc777bdbf76f8154f1a538f4bb7501a41a",
+          "sha256": "88899566a23c3b5ffb4a334d96d353ab377d41b000b4cb5a8fd16c3ddcbbd30f",
+          "sha1": "d40eb0fb0ab52c4d6bcf139ff188dff1cf69c91f",
+          "md5": "c4a252d6238c121447eaf886382f3ad0"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 7,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.7.20"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "timeplugin-1.0.0.jar",
+          "url": "timeplugin-1.0.0.jar",
+          "size": 2326,
+          "sha512": "c9242784266e4bffbc0fb37afb6324c44679a70448e88fcc74e119c44ea094050970c75f64272f530197c5137dac06dc777bdbf76f8154f1a538f4bb7501a41a",
+          "sha256": "88899566a23c3b5ffb4a334d96d353ab377d41b000b4cb5a8fd16c3ddcbbd30f",
+          "sha1": "d40eb0fb0ab52c4d6bcf139ff188dff1cf69c91f",
+          "md5": "c4a252d6238c121447eaf886382f3ad0"
+        }
+      ]
+    }
+  ]
+}

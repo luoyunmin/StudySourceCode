@@ -1,0 +1,40 @@
+plugins {
+    id 'java-library'
+    id 'org.jetbrains.kotlin.jvm'
+    id 'java-gradle-plugin'
+    id "maven-publish"
+}
+
+dependencies {
+    implementation gradleApi()
+    implementation 'com.android.tools.build:gradle:4.2.2'
+}
+java {
+    sourceCompatibility = JavaVersion.VERSION_1_7
+    targetCompatibility = JavaVersion.VERSION_1_7
+}
+
+gradlePlugin {
+    plugins {
+        plugin1TimePlugin {
+            id = "com.luoyunmin.plugin1"
+            implementationClass = 'com.luoyunmin.plugin1.TimePlugin'
+        }
+    }
+}
+
+publishing {
+    publications {
+        repo(MavenPublication) {
+            groupId = "com.luoyunmin.plugin1"
+            artifactId = "timeplugin"
+            version = '1.0.0'
+            from components.java
+        }
+    }
+    repositories {
+        maven {
+            url './../repo'
+        }
+    }
+}

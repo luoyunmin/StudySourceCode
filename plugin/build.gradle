@@ -1,0 +1,24 @@
+plugins {
+    id 'groovy'
+    id 'maven-publish'
+}
+
+apply plugin: GradleTimePlugin
+apply plugin: BuildSrcTimePlugin
+
+dependencies {
+    implementation gradleApi()
+    implementation localGroovy()
+}
+
+class GradleTimePlugin implements Plugin<Project> {
+
+    @Override
+    void apply(Project target) {
+        target.task("gradleTimePlugin") {
+            doLast {
+                println "this is gradle Time Plugin!"
+            }
+        }
+    }
+}
