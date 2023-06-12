@@ -21,7 +21,8 @@ class MainActivity : ComponentActivity() {
                 ) {
                     MainComponent(
                         onJavaCrashClick = { onJavaCrashClick() },
-                        onNativeCrashClick = { onNativeCrashClick() })
+                        onNativeCrashClick = { onNativeCrashClick() },
+                        onASMClick = { onTestASM() })
                 }
             }
         }
@@ -33,5 +34,9 @@ class MainActivity : ComponentActivity() {
 
     private fun onNativeCrashClick() {
 
+    }
+
+    private fun onTestASM() {
+        TestASM.b()
     }
 }

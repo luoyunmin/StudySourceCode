@@ -14,12 +14,14 @@ import androidx.compose.ui.unit.dp
 @Composable
 fun MainComponent(
     onJavaCrashClick: () -> Unit,
-    onNativeCrashClick: () -> Unit
+    onNativeCrashClick: () -> Unit,
+    onASMClick: () -> Unit
 ) {
     Column() {
         Column {
             StudyButton(text = "Java Crash", onClick = onJavaCrashClick)
             StudyButton(text = "Native Crash", onClick = onNativeCrashClick)
+            StudyButton(text = "Test ASM", onClick = onASMClick)
         }
     }
 }
